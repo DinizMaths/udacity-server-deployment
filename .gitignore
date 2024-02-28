@@ -28,11 +28,10 @@ htmlcov/
 .envrc
 .direnv
 
-.github/**
+.github
+
+aws-auth*
+trust*
+iam-role*
 venv*
-aws-steps.md
-aws-auth-patch.yml
-aws-auth-patch-old.yml
-iam-role-policy.json
-kubectl
-trust.json
+steps*
