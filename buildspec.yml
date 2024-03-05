@@ -30,7 +30,6 @@ phases:
       - echo 'export PATH=$PWD/:$PATH' >> $HOME/.bashrc
       - echo `kubectl version --client`
       - python -m pip install --upgrade --force pip
-      - wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add E88979FB9B30ACF2
       - apk update && apk add jq  && pip install --upgrade awscli
   pre_build:
       commands:
