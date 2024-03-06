@@ -9,7 +9,6 @@ WORKDIR /app
 # Install `pip` and needed Python packages from `requirements.txt`
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
-RUN yum install -y jq
 
 # Define an entrypoint which will run the main app using the Gunicorn WSGI server.
 ENTRYPOINT ["gunicorn", "-b", ":8080", "main:APP"]
